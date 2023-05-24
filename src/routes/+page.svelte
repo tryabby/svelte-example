@@ -1,16 +1,16 @@
 <script lang="ts">
     import {useAbby, useFeatureFlag} from "../lib/abby"
     const {variant, onAct} = useAbby("New Test")
-    const feature1 = useFeatureFlag("lol")
+    const feature1 = useFeatureFlag("clientFeature")
 </script>
-<div class="bg-slate-700">
+<div class="bg-pink-200">
 
     {$variant}
     
     {#if feature1}
-    feat enabled
-    
+    feat enabled  
     {/if}
     
     <a href="/about" >about</a>
+    <a href="/marketing" >marketing</a>
 </div>
