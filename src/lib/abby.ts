@@ -8,5 +8,5 @@ export const { useAbby, AbbyProvider, useFeatureFlag, withAbby , __abby__} = cre
       variants: ["A", "B", "C"],
     },
   },
-  flags: [],
+  flags: ["lol", "test3", "testAbby"],
 });

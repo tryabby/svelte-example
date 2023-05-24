@@ -1,2 +1,12 @@
-<h1>Welcome to SvelteKit</h1>
-<p>Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation</p>
+<script lang="ts">
+    import {useAbby, useFeatureFlag} from "../lib/abby"
+    const {variant, onAct} = useAbby("New Test")
+    const feature1 = useFeatureFlag("lol")
+</script>
+
+{$variant}
+
+{#if feature1}
+feat enabled
+    
+{/if}
