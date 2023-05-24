@@ -14,5 +14,4 @@
     <p>
         You are seeing Variant {$variant}
     </p>
-    <a href="/">back to index</a>
 </div>

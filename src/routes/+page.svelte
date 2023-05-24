@@ -10,7 +10,4 @@
     {#if feature1}
     feat enabled  
     {/if}
-    
-    <a href="/about" >about</a>
-    <a href="/marketing" >marketing</a>
 </div>
