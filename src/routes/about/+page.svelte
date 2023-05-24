@@ -13,14 +13,13 @@
 
 <div class="flex flex-col pl-5">
     <div class="flex flex-row space-x-4 space-y-3 ">
-        <p class="">You are currently on variant {$variant}</p>
+        <p class="">You are currently on <b> variant {$variant}</b> </p>
         <button class="bg-white rounded-md p-2 max-w-md hover:bg-red-300" on:click={handleOnclick}>Reset cookie</button>
     </div>
-    {#if clientFeature}
-        <p>If you see this clientside FeatureFlag is enabled</p>
+    {#if $clientFeature}
+    <p> If you see this text the <b>client</b> flag is enabled </p>
     {/if}
-
-    {#if serverFeature}
-       <p> If you see this severside FeatureFlag is enabled</p>
+    {#if $serverFeature}
+    <p> If you see this text the <b>server</b> flag is enabled </p>
     {/if}
 </div>
