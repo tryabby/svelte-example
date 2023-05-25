@@ -7,8 +7,11 @@
 </script>
  
 <AbbyProvider {data} abby={__abby__}>
-    <header class="bg-red-500">
+    <header class="bg-pink-300 py-3" >
         <ul class="flex space-x-10 pl-10">
+            <li>
+                <a href="/">Back to index</a>
+            </li>
             <li>
                 <a href="/about">About</a>
             </li>
@@ -17,9 +20,6 @@
             </li>
             <li>
                 <a href="/marketing">Marketing</a>
-            </li>
-            <li>
-                <a href="/">Back to index</a>
             </li>
         </ul>
     </header>

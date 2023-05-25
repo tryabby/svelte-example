@@ -4,4 +4,4 @@
         console.log("clicked")
     }
 </script>
-<button class="ml-16 w-36 px-6 py-4 my-3 bg-gray-800 text-white font-bold p-2 rounded-lg hover:bg-red-500" on:click={handleClick}> Reset Cookie</button>
+<button class="ml-16 w-36 px-6 py-4 my-3 bg-gray-900 text-white font-bold p-2 rounded-lg hover:bg-gray-700 hover:scale-110 transition-transform duration-200 ease-in-out" on:click={handleClick}> Reset Cookie</button>
