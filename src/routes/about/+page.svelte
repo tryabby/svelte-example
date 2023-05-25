@@ -6,10 +6,8 @@
     const {variant, onAct} = useAbby("New Test")
     const clientFeature = useFeatureFlag("clientFeature");
     const serverFeature = useFeatureFlag("serverFeature");
-    const handleOnclick = () => {
-        console.log("yoo test")
-    }
     export let data: PageData;
+    
 </script>
 
 <div class="flex flex-col mx-auto">
