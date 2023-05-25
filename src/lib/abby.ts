@@ -1,6 +1,6 @@
 import { createAbby } from "@tryabby/svelte";
 
-export const { useAbby, AbbyProvider, useFeatureFlag, withAbby , __abby__, getABResetFunction} = createAbby({
+export const { useAbby, AbbyProvider, useFeatureFlag, withAbby , __abby__, getABResetFunction, withDevTools} = createAbby({
   projectId: "clhomr74n0000mk087fjib7o7",
   currentEnvironment: process.env.NODE_ENV,
   tests: {

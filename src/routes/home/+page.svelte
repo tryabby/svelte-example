@@ -16,6 +16,6 @@
         {:else}
         <p>You are seeing <b>Variant {$variant} </b></p>
         {/if}
-        <CookieResetButton />
+        <CookieResetButton testName="New Test"/>
     </div>
 </div>

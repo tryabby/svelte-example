@@ -22,7 +22,7 @@
             {:else if $variant === "C"}
             You are seeing <b> Variant {$variant}</b>
             {/if}
-            <ResetCookieButton/>
+            <ResetCookieButton testName="New Test"/>
             {#if $clientFeature}
             <p> If you see this text the <b>client</b> flag is enabled </p>
             {/if}

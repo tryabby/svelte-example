@@ -16,7 +16,7 @@
     <div class="flex mx-auto flex-col space-y-3 ">
             <div class="flex flex-col mt-6">
                 <p class="">You are currently on <b> variant {$variant}</b> </p>
-                <CookieResetButton />
+                <CookieResetButton testName="New Test" />
             </div>
             {#if $clientFeature}
             <p> If you see this text the <b>client</b> flag is enabled </p>

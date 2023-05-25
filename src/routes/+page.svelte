@@ -1,5 +1,5 @@
 <script lang="ts">
-    import {useAbby, useFeatureFlag} from "../lib/abby"
+    import {useFeatureFlag} from "../lib/abby"
     const clientFeature = useFeatureFlag("clientFeature")
     const serverFeature = useFeatureFlag("serverFeature")
 </script>
@@ -13,6 +13,10 @@
         {/if}
         {#if $serverFeature}
         <p class="my-2"> If you see this text the <b>server</b> flag is enabled </p>
+        <div class="flex-col flex items-stretch">
+            <img alt="Rick Astley - Never Gonna Give You Up" 
+            src="https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExYTMzOTczMjA1YzAxNGJmMGY5YzI2MWFjODBhMWQ4NDhmOGNlM2NiZiZlcD12MV9pbnRlcm5hbF9naWZzX2dpZklkJmN0PWc/Ju7l5y9osyymQ/giphy.gif">
+        </div>
         {/if}
         <ul class="list-disc pl-4">
             <li><a class="text-gray-600 hover:text-gray-400" href="/home">/home</a></li>
