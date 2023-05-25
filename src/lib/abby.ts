@@ -8,5 +8,5 @@ export const { useAbby, AbbyProvider, useFeatureFlag, withAbby , __abby__, getAB
       variants: ["A", "B", "C"],
     },
   },
-  flags: ["clientFeature", "serverFeature"],
+  flags: ["clientFeature", "serverFeature", "rickRoll"],
 });
