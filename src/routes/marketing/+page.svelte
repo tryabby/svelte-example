@@ -11,16 +11,24 @@
 </script>
 
 <div class="max-w-3xl mx-auto ">
-    <div class="flex flex-col align-middle">
-        <p class="pt-2">
-            You are seeing <b> Variant {$variant}</b> 
-        </p>
-        <ResetCookieButton />
+    <div class="flex flex-col align-middle mx-auto">
+        <div class="mx-auto">
+            {#if $variant == "A"}
+            <p class="pt-2">
+                You are seeing the <b>  original Variant</b> 
+            </p>
+            {:else if $variant === "B"}
+            You are seeing <b> Variant {$variant}</b>
+            {:else if $variant === "C"}
+            You are seeing <b> Variant {$variant}</b>
+            {/if}
+            <ResetCookieButton/>
+            {#if $clientFeature}
+            <p> If you see this text the <b>client</b> flag is enabled </p>
+            {/if}
+            {#if $serverFeature}
+            <p> If you see this text the <b>server</b> flag is enabled </p>
+            {/if}
+        </div>
     </div>
-    {#if $clientFeature}
-    <p> If you see this text the <b>client</b> flag is enabled </p>
-    {/if}
-    {#if $serverFeature}
-    <p> If you see this text the <b>server</b> flag is enabled </p>
-    {/if}
 </div>
