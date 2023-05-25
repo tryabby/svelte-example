@@ -15,7 +15,7 @@
         <div class="mx-auto">
             {#if $variant == "A"}
             <p class="pt-2">
-                You are seeing the <b>  original Variant</b> 
+                You are seeing the <b> original Variant</b> 
             </p>
             {:else if $variant === "B"}
             You are seeing <b> Variant {$variant}</b>
