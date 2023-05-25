@@ -13,5 +13,22 @@
       @apply text-blue-600 underline;
     }
   }
+  .mark {
+    position: relative;
+    display: inline-block;
+    z-index: 0;
+  }
+.mark::before {
+    /* Highlight color */
+    @apply bg-pink-300;
+    content: "";
+    position: absolute;
+    width: calc(100% + 12px);
+    height: 80%;
+    left: -6px;
+    bottom: 5px;
+    z-index: -1;
+    transform: rotate(-1deg);
+}
 @tailwind components;
 @tailwind utilities;
