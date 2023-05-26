@@ -1,12 +1,15 @@
 import { createAbby } from "@tryabby/svelte";
 
 export const { useAbby, AbbyProvider, useFeatureFlag, withAbby , __abby__, getABResetFunction, withDevTools} = createAbby({
-  projectId: "clhomr74n0000mk087fjib7o7",
-  currentEnvironment: process.env.NODE_ENV,
+  projectId: "clg0i3xdc0000mfh7lg0mbvnf",
+  currentEnvironment: "default", //process.env.NODE_ENV,
   tests: {
-    "New Test": {
+    Home: {
       variants: ["A", "B", "C"],
     },
+    Marketing: {
+      variants: ["b", "c", "original"],
+    },
   },
-  flags: ["clientFeature", "serverFeature", "rickRoll"],
+  flags: ["clientFlag", "serverFlag"],
 });
