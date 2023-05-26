@@ -1,12 +1,23 @@
-import { createAbby } from "@tryabby/svelte";
+import { createAbby } from '@tryabby/svelte';
 
-export const { useAbby, AbbyProvider, useFeatureFlag, withAbby , __abby__, getABResetFunction} = createAbby({
-  projectId: "clhomr74n0000mk087fjib7o7",
-  currentEnvironment: process.env.NODE_ENV,
-  tests: {
-    "New Test": {
-      variants: ["A", "B", "C"],
-    },
-  },
-  flags: ["clientFeature", "serverFeature"],
+export const {
+	useAbby,
+	AbbyProvider,
+	useFeatureFlag,
+	withAbby,
+	__abby__,
+	getABResetFunction,
+	withDevTools
+} = createAbby({
+	projectId: 'clg0i3xdc0000mfh7lg0mbvnf',
+	currentEnvironment: 'default', //process.env.NODE_ENV,
+	tests: {
+		Home: {
+			variants: ['A', 'B', 'C']
+		},
+		Marketing: {
+			variants: ['b', 'c', 'original']
+		}
+	},
+	flags: ['clientFlag', 'serverFlag']
 });
