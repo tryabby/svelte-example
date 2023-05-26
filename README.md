@@ -1,18 +1,24 @@
-# create-svelte
+---
+name: A/B Testing with A/BBY
+slug: ab-testing-abby
+description: A/BBY is a service for developer focused Feature Flags & A/B Testing. In this template you'll be able to use feature flags and A/B tests at the edge.
+framework: SvelteKit
+useCase: A/B Testing
+css: Tailwind
+deployUrl: 
+demoUrl: https://abby-svelte-example.vercel.app/
+relatedTemplates:
+  - ab-testing-simple
+---
 
-Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/master/packages/create-svelte).
+# A/B Testing with ConfigCat
 
-## Creating a project
+[A/BBY](https://tryabby.dev) is a service for developer focused Feature Flags & A/B Testing. In this Demo you'll be able to use feature flags and A/B tests at the edge.
 
-If you're seeing this, you've probably already done this step. Congrats!
+By A/B testing directly on the server-side, you'll reduce layout shift from client-loaded experiments and improving your site's performance with smaller JavaScript bundles.
 
-```bash
-# create a new project in the current directory
-npm create svelte@latest
-
-# create a new project in my-app
-npm create svelte@latest my-app
-```
+## Demo
+https://abby-svelte-example.vercel.app/
 
 ## Developing
 
