@@ -23,8 +23,6 @@
 		{/if}
 		{#if $serverFeature}
 			<p class="my-2">If you see this text the <b>server</b> flag is enabled</p>
-		{/if}
-		{#if true}
 			<div class="flex-col flex items-stretch max-w-2xl">
 				<img
 					alt="Rick Astley - Never Gonna Give You Up"
