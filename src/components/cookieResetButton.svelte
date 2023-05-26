@@ -3,7 +3,7 @@
 	export let testName: string;
 	const handleClick = () => {
 		console.log('clicked');
-		getABResetFunction(testName);
+		getABResetFunction(testName)();
 	};
 </script>
 
