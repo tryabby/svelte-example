@@ -12,16 +12,18 @@
 <div class="max-w-3xl mx-auto">
 	<div class="flex flex-col align-middle mx-auto">
 		<div class="mx-auto">
-			{#if $variant == 'original'}
-				<p class="pt-2">
-					You are seeing the <b> original Variant</b>
-				</p>
-			{:else if $variant === 'b'}
-				You are seeing <b> Variant {$variant}</b>
-			{:else if $variant === 'c'}
-				You are seeing <b> Variant {$variant}</b>
-			{/if}
-			<ResetCookieButton testName="Marketing" />
+			<div class="pt-5 flex flex-col justify-center items-center">
+				{#if $variant == 'original'}
+					<p class="pt-2">
+						You are seeing the <b> original Variant</b>
+					</p>
+				{:else if $variant === 'b'}
+					<p>You are seeing <b> Variant {$variant}</b></p>
+				{:else if $variant === 'c'}
+					<p>You are seeing <b> Variant {$variant}</b></p>
+				{/if}
+				<ResetCookieButton testName="Marketing" />
+			</div>
 			{#if $clientFeature}
 				<p>If you see this text the <b>client</b> flag is enabled</p>
 			{/if}

@@ -8,7 +8,7 @@
 </script>
 
 <div class="max-w-5xl flex flex-col justify-center mx-auto">
-	<div class="mx-auto">
+	<div class="mx-auto flex flex-col items-center pt-5">
 		{#if $variant === 'A'}
 			<p>You are seeing <b>Variant {$variant} </b></p>
 		{:else if $variant === 'B'}
@@ -16,6 +16,6 @@
 		{:else}
 			<p>You are seeing <b>Variant {$variant} </b></p>
 		{/if}
-		<CookieResetButton testName="New Test" />
+		<CookieResetButton css="bg-red-500" testName="New Test" />
 	</div>
 </div>
